@@ -2,7 +2,9 @@
 
 Simple weather app that uses [Weather Underground API](https://www.wunderground.com/weather/api/d/docs)
 
-# Getting Started
+![App](/app/img/screenshot.png)
+
+### Getting Started
 ```
 npm install
 ```
@@ -17,9 +19,9 @@ node server.js
 
 Then open browser to ```localhost:3000``` - if enabled in browser, geolocation updates app with current location's weather.
 
-# API Reference
-### GET /api/current/:location
-### GET /api/forecast/:location
+### API Reference
+##### GET /api/current/:location
+##### GET /api/forecast/:location
 
 Acceptable location formats:
 
@@ -32,3 +34,6 @@ Acceptable location formats:
 | airport code            | KJFK              |
 | PWS id                  | pws:KCASANFR70    |
 | AutoIP address location | autoip            |
+
+### Issues? Suggestions? Comments?
+Submit an issue on [GitHub](https://github.com/sabbyt/weather-app/issues).
