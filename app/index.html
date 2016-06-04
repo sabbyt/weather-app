@@ -1,0 +1,60 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Weather App</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymou'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' media='(max-width: 767px)' href='css/max-768px.css'>
+  <link rel='stylesheet' media='(min-width: 768px)' href='css/min-768px.css'>
+</head>
+
+<body>
+  <div class='container'>
+
+    <div class='page-header'>
+      <h1 id='location'></h1>
+    </div>
+
+    <div class='col-xs-12 flexcontainer'>
+      <div class='col-xs-12'>
+        <div id='today-logo' class='col-xs-6 today-box'></div>
+        <div id='today-conditions' class='col-xs-6 today-box'></div>
+      </div>
+      <div class='col-xs-12 today-box'>
+        <div id='today-text' class='col-xs-12'><p><strong>Today</strong></p></div>
+      </div>
+    </div>
+
+    <div class='row container'>
+      <div class= 'border-top col-sm-3 col-xs-12' id='forecast-1day'></div>
+      <div class= 'border-top col-sm-3 col-xs-12' id='forecast-2day'></div>
+      <div class= 'border-top col-sm-3 col-xs-12' id='forecast-3day'></div>
+    </div>
+
+    <div class='border-top col-xs-12'>
+      <div class='input-group'>
+        <input title='zip-code-entry' id='location-zip' type='number' class='form-control' placeholder='Zip Code'>
+        <span class='input-group-btn'>
+          <button class='btn btn-default' type='button'>Change</button>
+        </span>
+      </div>
+      <p id='invalid-entry'>No cities match your search query</p>
+    </div>
+  </div>
+
+  <footer class='footer'>
+    <div class='container'>
+      <img src='img/wunderground-logo.png' alt='Weather Underground Logo'/>
+      <p class='text-muted'>Powered by <a href='https://www.wunderground.com/'>Weather Underground</a></p>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js' charset='utf-8'></script>
+  <script src='js/get_current_weather.js'></script>
+  <script src='js/get_forecast_weather.js'></script>
+  <script src='js/current_location.js'></script>
+  <script src='js/change_location.js'></script>
+</body>
+</html>

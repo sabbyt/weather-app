@@ -1,0 +1,84 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 120px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.border-top {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  margin: 0 -11px -1px 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.border-top img {
+  max-width: 100px;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.container .text-muted {
+  margin: 20px 0 0 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background-color: #f5f5f5;
+}
+
+.footer img {
+  padding-top: 10px;
+  display: inline-block;
+  max-width: 200px;
+}
+
+.input-group {
+  padding-top: 10px;
+}
+
+.temp-num {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.today-temp-num {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.temp-text {
+  font-size: 1.3em;
+  padding-top: 14px;
+}
+
+#invalid-entry {
+  padding-top: 20px;
+}
+
+#today-logo img {
+  float: right;
+  min-width: 70px;
+}
+
+#today-text {
+  font-size: 1.3em;
+  padding-bottom: 5px;
+}
