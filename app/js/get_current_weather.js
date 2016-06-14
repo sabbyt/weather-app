@@ -1,7 +1,7 @@
 function getCurrentWeather(location) {
-  var endpoint = 'http://localhost:3000/api/current/96812';
+  var endpoint = 'https://sabrinatee-weather-app.herokuapp.com/api/current/96812';
 
-  if (location) endpoint = 'http://localhost:3000/api/current/' + location;
+  if (location) endpoint = 'https://sabrinatee-weather-app.herokuapp.com/api/current/' + location;
   return $.ajax(endpoint)
     .then((data) => { //eslint-disable-line
       if (data.response.error) {

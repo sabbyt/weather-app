@@ -1,6 +1,6 @@
 function getForecastWeather(location) {
-  var endpoint = 'http://localhost:3000/api/forecast/96812';
-  if (location) endpoint = 'http://localhost:3000/api/forecast/' + location;
+  var endpoint = 'https://sabrinatee-weather-app.herokuapp.com/api/forecast/96812';
+  if (location) endpoint = 'https://sabrinatee-weather-app.herokuapp.com/api/forecast/' + location;
   return $.ajax(endpoint)
     .then((data) => { //eslint-disable-line
       if (data.response.error) return console.log(data.response.error);
