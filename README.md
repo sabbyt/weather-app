@@ -1,6 +1,7 @@
 # weather-app
 
-Simple weather app that uses [Weather Underground API](https://www.wunderground.com/weather/api/d/docs)
+Simple weather app that uses [Weather Underground API](https://www.wunderground.com/weather/api/d/docs).
+Hosted at: https://sabrinatee-weather-app.herokuapp.com/
 
 ![App](/app/img/screenshot.png)
 
